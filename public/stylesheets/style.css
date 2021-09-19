@@ -96,11 +96,7 @@
     color: var(--textcolor);
   }
 
-  .card-title {
-    background-color: var(--secondary);
-  }
-
-  .card-body{
+  .card{
     background-color: var(--tertiary);
   }
   
