@@ -1,3 +1,10 @@
+:root{
+  --primary: #114B5F;
+  --secondary: #028090;
+  --tertiary: #456990;
+  --accent: #A846A0;
+  --textcolor: #E4FDE1;
+}
 * {
     box-sizing: border-box;
   }
@@ -6,26 +13,26 @@
     height: 100%;
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
-    color: #333;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--textcolor);
   }
   
   a {
     text-decoration: none;
-    color: #225ca3;
+    background-color: var(--tertiary);
     font-weight: bold;
     transition: color .1s;
   }
   
   a:hover {
-    color: #3486eb;
+    color: var(--primary);
   }
   
   button {
-    background-color: #225ca3;
+    background-color: var(--secondary);
     border: 0;
     padding: 1%;
-    color: white;
+    color: var(--textcolor);
     font-weight: bold;
     transition: background-color .1s;
     cursor: pointer;
@@ -33,10 +40,10 @@
   }
   
   button:hover {
-    background-color: #3486eb;
+    background-color: var(--accent);
   }
   
-  .post-list {
+  .blog-list {
     margin: 0;
     padding: 0;
   }
@@ -44,12 +51,12 @@
   textarea, input {
     padding: .5%;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--tertiary);
   }
   
   textarea:focus, input:focus {
     outline: none;
-    border: 1px solid #3486eb;
+    border: 1px solid var(--secondary);
   }
   
   textarea {
@@ -75,7 +82,8 @@
   }
   
   header {
-    border-bottom: 1px solid #ccc;
+    background-color: var(--secondary);
+    border-bottom: 1px solid var(--tertiary);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,6 +92,7 @@
   
   header h1 {
     font-size: 1em;
+    color: var(--textcolor);
   }
   
   main {
@@ -91,57 +100,22 @@
     padding: 2% 4%;
   }
   
-  .btn-no-style {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
-    text-decoration: none;
-    color: #225ca3;
-    font-size: 100%;
-    font-weight: bold;
-    transition: color .1s;
-    margin-left: 16px;
-  }
-  
-  .btn-no-style:hover {
-    background: none;
-    color: #3486eb;
-  }
-  
-  .delete-post-btn {
-    background-color: #d41414;
-  }
-  
-  .delete-post-btn:hover {
-    background-color: #ff643d;
-  }
-  
-  .post {
+  .blog {
     margin-bottom: 2%;
     line-height: 150%;
   }
   
-  .post .title span {
+  .blog {
     font-style: italic;
     font-size: 90%;
-    color: #7d7d7d;
+    color: var(--textcolor);
   }
   
   .edit-link {
     display: block;
     margin: -1.5% 0 2% 0;
   }
-  
-  .upvote-btn {
-    background-color: #197d0f;
-    transition: background-color .1s;
-  }
-  
-  .upvote-btn:hover {
-    background-color: #1f9c13;
-  }
-  
+    
   .comment-form {
     margin-bottom: 5%;
   }
@@ -152,7 +126,7 @@
   }
   
   .comment:nth-child(odd) {
-    background-color: #fff5eb;
+    background-color: var(--secondary);
   }
   
   .comment .meta {
@@ -170,7 +144,7 @@
   }
   
   footer {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid var(--tertiary);
     display: flex;
     justify-content: center;
     padding: 1%;

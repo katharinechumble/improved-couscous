@@ -18,7 +18,7 @@ Comment.belongsTo(User, {
   onDelete: 'SET NULL'
 });
 
-Comment.belongsTo(Post, {
+Comment.belongsTo(Blog, {
   foreignKey: 'post_id',
   onDelete: 'SET NULL'
 });
