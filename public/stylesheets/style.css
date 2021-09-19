@@ -95,6 +95,11 @@
     font-size: 1em;
     color: var(--textcolor);
   }
+
+  .card-title {
+    background-color: var(--secondary);
+    
+  }
   
   main {
     flex: 1;
@@ -146,6 +151,7 @@
   
   footer {
     border-top: 1px solid var(--tertiary);
+    background-color: var(--secondary);
     display: flex;
     justify-content: center;
     padding: 1%;
