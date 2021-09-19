@@ -98,6 +98,7 @@
 
   .card{
     background-color: var(--tertiary);
+    color: var(--secondary);
   }
   
   main {
